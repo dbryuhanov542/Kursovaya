@@ -13,7 +13,6 @@ namespace Kursovaya
 {
     public partial class Auth_form : Form
     {
-        MySqlConnection con = new MySqlConnection(@"User Id=root;Password='';Host=localhost;Database=KursovayaDB;port=3306");
 
         public Auth_form()
         {
@@ -47,6 +46,13 @@ namespace Kursovaya
         {
             Reg_form f2 = new Reg_form();
             f2.Show();
+            Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            DBset_form dBset = new DBset_form();
+            dBset.Show();
             Hide();
         }
     }

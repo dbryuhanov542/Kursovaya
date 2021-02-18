@@ -46,7 +46,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.просмотрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.настройкиБДToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -265,7 +264,7 @@
             // 
             this.просмотрToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.просмотрToolStripMenuItem.Name = "просмотрToolStripMenuItem";
-            this.просмотрToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.просмотрToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
             this.просмотрToolStripMenuItem.Text = "Просмотр заявок";
             this.просмотрToolStripMenuItem.Click += new System.EventHandler(this.просмотрToolStripMenuItem_Click);
             // 
@@ -273,23 +272,14 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Maroon;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.просмотрToolStripMenuItem,
-            this.настройкиБДToolStripMenuItem});
+            this.просмотрToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(587, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // настройкиБДToolStripMenuItem
-            // 
-            this.настройкиБДToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.настройкиБДToolStripMenuItem.Name = "настройкиБДToolStripMenuItem";
-            this.настройкиБДToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
-            this.настройкиБДToolStripMenuItem.Text = "Настройки БД";
-            this.настройкиБДToolStripMenuItem.Click += new System.EventHandler(this.настройкиБДToolStripMenuItem_Click);
-            // 
-            // Form3
+            // Main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,7 +301,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form3";
+            this.Name = "Main_form";
             this.Text = "Окно создания заявок";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -341,6 +331,5 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ToolStripMenuItem просмотрToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem настройкиБДToolStripMenuItem;
     }
 }
