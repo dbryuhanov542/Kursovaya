@@ -27,7 +27,7 @@ namespace Kursovaya
             }
             else
             {
-                DataTable data = Login.log("select * from KursovayaDB.user_data where username = '"
+                DataTable data = Functions.Connect("select * from KursovayaDB.user_data where username = '"
                    + textBox1.Text + "' and userpass = '" + textBox2.Text + "'");
                 if (data.Rows.Count == 1)
                 {

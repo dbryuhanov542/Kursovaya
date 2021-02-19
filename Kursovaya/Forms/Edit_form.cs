@@ -22,7 +22,7 @@ namespace Kursovaya
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            DataTable data = Login.log("select * from requests");
+            DataTable data = Functions.Connect("select * from requests");
             dataGridView1.DataSource = data;
         }
 
@@ -54,9 +54,9 @@ namespace Kursovaya
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DataTable data = Login.log(@" DELETE FROM KursovayaDB.requests WHERE id =" + 
+            DataTable data = Functions.Connect(@" DELETE FROM KursovayaDB.requests WHERE id =" + 
             dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
-            DataTable data1 = Login.log("select * from requests");
+            DataTable data1 = Functions.Connect("select * from requests");
             dataGridView1.DataSource = data1;
         }
 

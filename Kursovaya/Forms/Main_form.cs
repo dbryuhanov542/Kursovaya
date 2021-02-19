@@ -31,40 +31,17 @@ namespace Kursovaya
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "")
+            if (comboBox1.Text != "")
             {
-                if (textBox1.Text == "") 
+                if (textBox1.Text != "") 
                 {
-                    if (textBox2.Text == "")
+                    if (textBox2.Text != "")
                     {
                         string date_end = comboBox2.Text + "/" + comboBox3.Text + "/" + comboBox4.Text;
                         string date = DateTime.Now.ToString("dd.MM.yyyy | HH:mm:ss");
-                        var con = new MySqlConnection(@"User Id=root;Password='';Host=localhost;Database=KursovayaDB;port=3306; charset = utf8");
-                        var command = new MySqlCommand(@"insert into KursovayaDB.requests (request_type, client_name, data_zakaza, date_end, price, comment) 
-                    values (@request_name, @client_name, @data_zakaza, @date_end, @price, @comment)", con);
-                        command.Parameters.AddWithValue("@request_name", comboBox1.Text);
-                        command.Parameters.AddWithValue("@client_name", textBox1.Text);
-                        command.Parameters.AddWithValue("@data_zakaza", date);
-                        command.Parameters.AddWithValue("@date_end", date_end);
-                        command.Parameters.AddWithValue("@price", textBox2.Text);
-                        command.Parameters.AddWithValue("@comment", richTextBox1.Text);
-                        con.Open();
-                        try
-                        {
-                            command.ExecuteNonQuery();
-                            MessageBox.Show("Заявка успешно зарегистрирована.");
-                            comboBox1.Text = "";
-                            textBox2.Text = "";
-                            comboBox2.Text = "";
-                            comboBox3.Text = "";
-                            comboBox4.Text = "";
-                            textBox1.Text = "";
-                            richTextBox1.Text = "";
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Сохранение заявки не удалась \n Ошибка: " + ex.Message);
-                        }
+                        string comm = @"insert into KursovayaDB.requests (request_type, client_name, data_zakaza, date_end, price, comment) 
+                    values (@request_name, @client_name, @data_zakaza, @date_end, @price, @comment)";
+                        DataTable data = Functions.Add(comm, comboBox1.Text, textBox1.Text, date, date_end, textBox2.Text, richTextBox1.Text);
                     }
                     else
                     {
