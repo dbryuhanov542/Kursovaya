@@ -18,7 +18,7 @@ namespace Kursovaya
             dataGridView1.MultiSelect = false;
         }
 
-        //int selected_id = 0;
+        // TODO: Реализовать функцию поиска по БД
 
         private void Form4_Load(object sender, EventArgs e)
         {
@@ -60,5 +60,10 @@ namespace Kursovaya
             dataGridView1.DataSource = data1;
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            DataTable data1 = Functions.Connect(@"SELECT * FROM `kursovayadb`.`requests` WHERE (CONVERT(`id` USING utf8) LIKE '%" + textBox2.Text + "%' OR CONVERT(`request_type` USING utf8) LIKE '" + textBox2.Text + "' OR CONVERT(`client_name` USING utf8) LIKE '" + textBox2.Text + "' OR CONVERT(`data_zakaza` USING utf8) LIKE '" + textBox2.Text + "' OR CONVERT(`date_end` USING utf8) LIKE '" + textBox2.Text + "' OR CONVERT(`price` USING utf8) LIKE '" + textBox2.Text + "' OR CONVERT(`comment` USING utf8) LIKE '" + textBox2.Text + "')");
+            dataGridView1.DataSource = data1;
+        }
     }
 }

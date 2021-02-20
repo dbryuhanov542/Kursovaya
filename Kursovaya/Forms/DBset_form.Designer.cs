@@ -46,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -163,21 +164,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(113, 218);
+            this.button2.Location = new System.Drawing.Point(113, 212);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 23);
+            this.button2.Size = new System.Drawing.Size(110, 41);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Вернуться";
+            this.button2.Text = "Назад";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(229, 218);
+            this.button1.Location = new System.Drawing.Point(229, 212);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 23);
+            this.button1.Size = new System.Drawing.Size(110, 41);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Подключиться ";
+            this.button1.Text = "Сохранить\r\nнастройки\r\n";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -229,6 +230,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label19);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.label16);
@@ -244,6 +246,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(280, 262);
             this.panel4.TabIndex = 10;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(43, 221);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 16);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "label19";
+            this.label19.Visible = false;
             // 
             // label14
             // 
@@ -289,11 +303,11 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(3, 11);
+            this.label13.Location = new System.Drawing.Point(14, 9);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(187, 32);
+            this.label13.Size = new System.Drawing.Size(180, 32);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Информация о текущем \r\nподключении";
+            this.label13.Text = "Информация о текущих\r\nнастройках";
             // 
             // label12
             // 
@@ -350,6 +364,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DBset_form";
             this.Text = "Настройки БД";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -394,5 +409,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
     }
 }

@@ -65,5 +65,12 @@ namespace Kursovaya
             f4.Show();
             this.Hide();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Auth_form form = new Auth_form();
+            form.Show();
+            this.Hide();
+        }
     }
 }

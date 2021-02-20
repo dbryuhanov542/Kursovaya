@@ -38,28 +38,33 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 119);
+            this.textBox1.Location = new System.Drawing.Point(67, 106);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 176);
+            this.textBox2.Location = new System.Drawing.Point(67, 151);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 20);
             this.textBox2.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(147, 230);
+            this.button1.Location = new System.Drawing.Point(67, 283);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.Size = new System.Drawing.Size(117, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Зарегистрировать";
             this.button1.UseVisualStyleBackColor = true;
@@ -99,7 +104,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(338, 62);
+            this.label2.Location = new System.Drawing.Point(304, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 18);
             this.label2.TabIndex = 1;
@@ -120,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(105, 98);
+            this.label4.Location = new System.Drawing.Point(64, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 18);
             this.label4.TabIndex = 7;
@@ -130,17 +135,66 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Italic);
-            this.label5.Location = new System.Drawing.Point(105, 155);
+            this.label5.Location = new System.Drawing.Point(64, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 18);
             this.label5.TabIndex = 8;
             this.label5.Text = "Пароль";
             // 
-            // Form2
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Italic);
+            this.label6.Location = new System.Drawing.Point(64, 221);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 18);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Должность";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Italic);
+            this.label7.Location = new System.Drawing.Point(64, 176);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 18);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Ф.И.О";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(67, 197);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(200, 20);
+            this.textBox3.TabIndex = 10;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(67, 242);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 20);
+            this.textBox4.TabIndex = 9;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(190, 283);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(77, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Назад";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Reg_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 298);
+            this.ClientSize = new System.Drawing.Size(398, 348);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
@@ -148,7 +202,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "Reg_form";
             this.Text = "Окно регистрации";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -169,5 +224,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button2;
     }
 }
