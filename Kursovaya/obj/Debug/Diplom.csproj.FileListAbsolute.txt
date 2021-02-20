@@ -1,0 +1,9 @@
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Diplom.csprojAssemblyReference.cache
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Kursovaya.Auth_form.resources
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Kursovaya.Reg_form.resources
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Kursovaya.Main_form.resources
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Kursovaya.Edit_form.resources
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Kursovaya.DBset_form.resources
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Diplom.Properties.Resources.resources
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Diplom.csproj.GenerateResource.cache
+K:\Projects\C#_Projects\Kursovaya\Kursovaya\obj\Debug\Diplom.csproj.CoreCompileInputs.cache
